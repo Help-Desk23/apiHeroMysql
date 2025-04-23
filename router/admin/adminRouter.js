@@ -13,7 +13,11 @@ adminRouter.patch('/admin/:id', updateAdmin);
 
 // Ruta para eliminar un usuario administrador
 
-adminRouter.delete('/admin/:id', deleteAdmin);  
+adminRouter.delete('/admin/:id', deleteAdmin);
+
+// Ruta login para administradores
+
+adminRouter.post('/admin/login', loginAdmin);
 
 
 
