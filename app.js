@@ -24,7 +24,7 @@ app.use(express.json());
 require('dotenv').config();
 
 app.use(cors({
-    origin: ['http://localhost:5173', 'https://tusitio.com'], // reemplaza con tu dominio real
+    origin: ['http://localhost:5173', 'https://tusitio.com'],
     methods: ['GET', 'POST','PATCH', 'DELETE'],
     credentials: true
 }));
