@@ -3,6 +3,7 @@ const http = require('http');
 const socketIo = require('socket.io');
 const cors = require('cors')
 require('dotenv').config();
+
 const { getAdmin } = require('./controllers/admin/admin');
 const adminRouter = require('./router/admin/adminRouter');
 const { getSucursales } = require('./controllers/sucursales/sucursal');
@@ -33,8 +34,6 @@ app.use(cors({
 }));
 
 app.use(express.json());
-
-// Configuracion inicial WebSocket
 
 const server = http.createServer(app);
 const io = socketIo(server, {
