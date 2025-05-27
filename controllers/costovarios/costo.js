@@ -66,7 +66,7 @@ const updateCosto = async (req, res) => {
     }
 
     if(descuento_inicial){
-        update.push('descuento_inicial');
+        update.push('descuento_inicial = ?');
         values.push(descuento_inicial);
     }
 
